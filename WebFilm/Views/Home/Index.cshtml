@@ -1,0 +1,12 @@
+﻿@Model  HomeViewModel
+
+<div class="container mt-5">
+    @{
+    foreach (var category in Model.AllCategoriesHVM)
+    {
+    <div class="col-lg-4">
+        <a href="#" class="btn btn-outline-primary">@category.categoryName</a>
+    </div>
+    }
+    }
+</div>

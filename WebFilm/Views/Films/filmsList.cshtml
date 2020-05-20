@@ -1,0 +1,15 @@
+﻿<p class="h2 mx-auto text-light" style="width: 200px;"><strong>Все фильмы</strong></p>
+<!--<p class="h3 mx-auto text-light" style="width: 200px;"><strong>@Model.currCategory</strong></p>-->
+<div class="row mt-5 mb-2">
+    @{
+        foreach (var film in Model.getAllFilms)
+        {
+            <div class="col-lg-4">
+                <img class="img-thumbnail" src="@film.img" alt="@film.nameFilm" />
+                <p class="h2 text-light"><strong>@film.nameFilm</strong></p>
+                <p2 class="h6 text-light">@film.shortDesc</p2>
+                <p><a class="btn btn-outline-success" href="#">Подробнее</a></p>
+            </div>
+        }
+    }
+</div>
